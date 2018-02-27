@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">
+</script>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('http://www.mind-over-batter.com/blog/wp-content/uploads/2016/08/oreo-milkshake-5.jpg');
+      background-size: cover;
+      color: brown;
+    }
+    a {
+      color: brown;
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid brown;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://www.mind-over-batter.com/blog/wp-content/uploads/2016/08/oreo-milkshake-5.jpg">
+    <h1>Joshua's Food Review</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Cooking lessons</a></li>
+      <li><a href="#">drumming lessons</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>About Me</h2>
+    <p>Hi! Name is Joshua Shaw. I am a professial musician, cook . </p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Best Spots to eat</h2>
+    <p>this is just my opinion: Red cafe, Checkers, Apple Bee's, McDonalds</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>For more info please contact me at 347-684-7845</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("You have liked this page!");
+    });
+  </script>
+</body>
